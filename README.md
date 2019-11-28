@@ -87,3 +87,13 @@ And finally, `--hard` is the same as `--mixed` (it changes your `HEAD` and index
 `--mixed` (default): **uncommit + unstage** changes, changes are left in working tree.
 
 `--hard`: **uncommit + unstage + delete** changes, nothing left.
+
+### Difference between git add, commit, push
+
+1. git add adds your modified files to the queue to be committed later. Files are not committed
+
+
+2. git commit commits the files that have been added and creates a new revision with a log... If you do not add any files, git will not commit anything. You can combine both actions with git commit -a
+
+
+3. git push pushes your changes to the remote repository.
