@@ -83,5 +83,7 @@ And finally, `--hard` is the same as `--mixed` (it changes your `HEAD` and index
 ### In the simplest terms:
 
 `--soft`: **uncommit changes**, changes are left staged (index).
+
 `--mixed` (default): **uncommit + unstage** changes, changes are left in working tree.
+
 `--hard`: **uncommit + unstage + delete** changes, nothing left.
