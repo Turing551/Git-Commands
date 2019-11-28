@@ -79,3 +79,9 @@ Now let's do `git reset --mixed B`. (Note: `--mixed` is the default option). Onc
 
 
 And finally, `--hard` is the same as `--mixed` (it changes your `HEAD` and index), except that `--hard` also modifies your working directory. If we're at `C` and run `git reset --hard B`, then the changes added in `C`, as well as any uncommitted changes you have, will be removed, and the files in your working copy will match commit `B`. Since you can permanently lose changes this way, you should always run `git status` before doing a hard reset to make sure your working directory is clean or that you're okay with losing your uncommitted changes.
+
+### In the simplest terms:
+
+`--soft`: **uncommit changes**, changes are left staged (index).
+`--mixed` (default): **uncommit + unstage** changes, changes are left in working tree.
+`--hard`: **uncommit + unstage + delete** changes, nothing left.
