@@ -59,6 +59,18 @@ Git Commands
 | `git log --summary` | View changes (detailed) |
 | `git diff [source branch] [target branch}` | Preview changes before merging |
 
+
+### Difference between git add, commit, push
+
+1. `git add` adds your modified files to the queue to be committed later. Files are not committed
+
+
+2. `git commit` commits the files that have been added and creates a new revision with a log... If you do not add any files, git will not commit anything. You can combine both actions with git commit -a
+
+
+3. `git push` pushes your changes to the remote repository.
+
+
 ### The difference between git reset --mixed, --soft, and --hard
 
 When you modify a file in your repository, the change is initially unstaged. In order to commit it, you must stage it—that is, add it to the index—using `git add`. When you make a commit, the changes that are committed are those that have been added to the index.
@@ -88,12 +100,4 @@ And finally, `--hard` is the same as `--mixed` (it changes your `HEAD` and index
 
 `--hard`: **uncommit + unstage + delete** changes, nothing left.
 
-### Difference between git add, commit, push
 
-1. `git add` adds your modified files to the queue to be committed later. Files are not committed
-
-
-2. `git commit` commits the files that have been added and creates a new revision with a log... If you do not add any files, git will not commit anything. You can combine both actions with git commit -a
-
-
-3. `git push` pushes your changes to the remote repository.
